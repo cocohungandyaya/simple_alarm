@@ -7,6 +7,7 @@ whatever i am just a jerk
 
 ## App Update log:
 10 Oct 2026:i write the basic backend of my simple alarm app using rust
+11 Oct 2026:fix a small bug that it can't detect 00:00 sth like that
 
 ## How to use(the backend version):
 it will auto generate a alarm_data.txt,open it,here is an example:
