@@ -3,7 +3,7 @@ A alarm app that can works as a simple alarm,by choosing the audio you want and 
 
 i am not really hoping anyone to use but if you are interested then i am absolutely ready to fix any bug
 
-in future will make a gui and maybe a installer,now actually already usable just maybe kinda annoying to adjust the alarm schedule
+in future will make a gui controller and maybe a installer,now actually already usable just maybe kinda annoying to adjust the alarm schedule
 
 ## App Update log:
 10 Oct 2026:i write the basic backend of my simple alarm app using rust
