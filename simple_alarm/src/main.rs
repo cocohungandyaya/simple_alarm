@@ -35,7 +35,7 @@ fn main() {
 				sleep(Duration::from_secs(1));
 				time_now=Local::now();
 				for i in 0..alarm_time.len(){
-					if format!("{:02}:{:02}",time_now.hour() as i32,time_now.minute() as i32)==alarm_time[i].trim(){
+					if format!("{x:0>2}:{y:0>2}",x=time_now.hour(),y=time_now.minute())==alarm_time[i].trim(){
 						let file=BufReader::new(fs::File::open(alarm_sound[i].split("\"").collect::<Vec<_>>().join("")).unwrap());
 						player=rodio::play(&sink_handle.mixer(),file).unwrap();
 					}
