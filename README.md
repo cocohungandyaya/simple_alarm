@@ -1,7 +1,7 @@
 # simple_alarm
 A alarm app that can works as a simple alarm,by choosing the audio you want and the time you want,it will work just like a alarm(even though i forgot to write stop button for sudden stop)
 
-in future will make a gui controller and maybe a installer,now actually already usable just maybe kinda annoying to adjust the alarm schedule
+in future will make a gui controller with python and maybe a installer,now actually already usable just maybe kinda annoying to adjust the alarm schedule
 
 whatever i am just a jerk
 
