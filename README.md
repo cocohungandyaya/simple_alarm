@@ -12,6 +12,7 @@ whatever i am just a jerk
 
 still 11 Oct 2026:i fix the problem that it delay activate for 1 second,also i added activation check for if the alarm is on or not
 
+uhh...emmm....yeah still 11 Oct 2026:due to i am really kinda jobless so i done the gui bruh
 ## How to use(the backend version):
 it will auto generate a alarm_data.txt,open it,here is an example:
 ```txt
@@ -19,3 +20,5 @@ it will auto generate a alarm_data.txt,open it,here is an example:
 "your/path/to/audio","your/path/to/audio"
 on,off
 ```
+## How to use(backend&frontend):
+download the latest release,run the simple_alarm/simple_alarm.exe you will see it auto generate a file call alarm_data.txt and then run the simple_alarm_gui/simple_alarm_gui.exe
