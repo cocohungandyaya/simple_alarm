@@ -26,16 +26,17 @@ fn main() {
 	let sink_handle=rodio::DeviceSinkBuilder::open_default_sink().expect("bruh");
 	loop{
 		let mut time_now=Local::now();
-		sleep(Duration::from_secs(((61-time_now.second())%60).into()));
+		sleep(Duration::from_secs(((60-time_now.second())%60).into()));
 		let data:String=std::fs::read_to_string(path).unwrap();
 		if !data.is_empty(){
 			let alarm_time:Vec<String>=data.split("\n").map(|x|x.to_string()).collect::<Vec<String>>()[0].split(",").map(|x|x.to_string()).collect::<Vec<String>>();
 			let alarm_sound:Vec<String>=data.split("\n").map(|x|x.to_string()).collect::<Vec<String>>()[1].split(",").map(|x|x.to_string()).collect::<Vec<_>>();
+			let alarm_active:Vec<String>=data.split("\n").map(|x|x.to_string()).collect::<Vec<String>>()[2].split(",").map(|x|x.to_string()).collect::<Vec<_>>();
 			if alarm_time.contains(&format!("{x:0>2}:{y:0>2}",x=time_now.hour(),y=time_now.minute())){
 				sleep(Duration::from_secs(1));
 				time_now=Local::now();
 				for i in 0..alarm_time.len(){
-					if format!("{x:0>2}:{y:0>2}",x=time_now.hour(),y=time_now.minute())==alarm_time[i].trim(){
+					if (format!("{x:0>2}:{y:0>2}",x=time_now.hour(),y=time_now.minute())==alarm_time[i].trim()) && (alarm_active[i].trim()=="on"){
 						let file=BufReader::new(fs::File::open(alarm_sound[i].split("\"").collect::<Vec<_>>().join("")).unwrap());
 						player=rodio::play(&sink_handle.mixer(),file).unwrap();
 					}
