@@ -3,6 +3,8 @@ A alarm app that can works as a simple alarm,by choosing the audio you want and 
 
 update for this project:it doesnt support windows motherfucker,the crate i use cause a constant stuck so yeah it works on my pc then it is fine bruh
 
+so the gui is work on window and linux but the backend core code only works on linux but not window bruh
+
 whatever i am just a jerk
 
 ## App Update log:
