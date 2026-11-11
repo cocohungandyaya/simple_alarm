@@ -21,4 +21,4 @@ it will auto generate a alarm_data.txt,open it,here is an example:
 on,off
 ```
 ## How to use(backend&frontend):
-download the latest release,run the (simple_alarm || simple_alarm.exe) you will see it auto generate a file call alarm_data.txt and then run the (simple_alarm_gui || simple_alarm_gui.exe)
+download the latest release zip file and unzip it,run the (simple_alarm || simple_alarm.exe) you will see it auto generate a file call alarm_data.txt and then run the (simple_alarm_gui || simple_alarm_gui.exe)
