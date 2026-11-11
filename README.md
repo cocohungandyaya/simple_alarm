@@ -10,9 +10,12 @@ whatever i am just a jerk
 
 11 Oct 2026:fix a small bug that it can't detect 00:00 sth like that
 
+still 11 Oct 2026:i fix the problem that it delay activate for 1 second,also i added activation check for if the alarm is on or not
+
 ## How to use(the backend version):
 it will auto generate a alarm_data.txt,open it,here is an example:
 ```txt
 22:00,23:00
 "your/path/to/audio","your/path/to/audio"
+on,off
 ```
