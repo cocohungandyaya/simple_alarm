@@ -1,7 +1,7 @@
 # simple_alarm
 A alarm app that can works as a simple alarm,by choosing the audio you want and the time you want,it will work just like a alarm(even though i forgot to write stop button for sudden stop)
 
-in future will make a gui controller with python and maybe a installer,now actually already usable just maybe kinda annoying to adjust the alarm schedule
+update for this project:it doesnt support windows motherfucker,the crate i use cause a constant stuck so yeah it works on my pc then it is fine bruh
 
 whatever i am just a jerk
 
